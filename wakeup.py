@@ -3,7 +3,8 @@ from time import sleep
 
 # list of hosts to keep awake
 HOSTS = [
-    'yugteatr.herokuapp.com'
+    'yugteatr.herokuapp.com',
+    'edu-active.herokuapp.com',
 ]
 
 # waiting time in seconds
