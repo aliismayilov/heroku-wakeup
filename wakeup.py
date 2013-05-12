@@ -1,9 +1,13 @@
 import httplib
+from time import sleep
 
 # list of hosts to keep awake
-hosts = [
+HOSTS = [
     'yugteatr.herokuapp.com'
 ]
+
+# waiting time in seconds
+TIME = 1200 # 20 minutes
 
 def get_status_code(host, path="/"):
     try:
@@ -13,8 +17,11 @@ def get_status_code(host, path="/"):
     except StandardError:
         return None
 
-for host in hosts:
-    print '{host} - HTTP {status}'.format(
-        host=host,
-        status=get_status_code(host)
-    )
+while True:
+    for host in HOSTS:
+        print '{host} - HTTP {status}'.format(
+            host=host,
+            status=get_status_code(host)
+        )
+    # wait for a sec
+    sleep(TIME)
