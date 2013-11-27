@@ -5,7 +5,8 @@ from time import sleep
 HOSTS = [
     'yugteatr.herokuapp.com',
     'bethclip.com',
-    'sli-dev.herokuapp.com'
+    'sli-dev.herokuapp.com',
+    'edu-active.herokuapp.com'
 ]
 
 # waiting time in seconds
