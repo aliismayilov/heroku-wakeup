@@ -7,7 +7,8 @@ HOSTS = [
     'bethclip.com',
     'slis-dev.herokuapp.com',
     'edu-active.herokuapp.com',
-    'edools-bower.herokuapp.com'
+    'edools-bower.herokuapp.com',
+    'softgames-test.herokuapp.com/'
 ]
 
 # waiting time in seconds
